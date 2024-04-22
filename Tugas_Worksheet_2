@@ -8,6 +8,7 @@ SELECT * FROM produk WHERE kode LIKE '%TV%';
 4.	Tampilkan pelanggan mengandung huruf 'SA'
 SELECT * FROM pelanggan WHERE nama LIKE '%SA%';
 5.	Tampilkan pelanggan yang lahirnya bukan di Jakarta dan mengandung huruf ‘yo‘
+SELECT * FROM pelanggan WHERE tmp_lahir LIKE '%yo%' AND tmp_lahir NOT LIKE '%Jakarta%';
 6.	Tampilkan pelanggan yang karakter huruf ke – 2 nya adalah A
 SELECT * FROM pelanggan WHERE nama LIKE '_A%';
 
